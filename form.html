@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h1>CANVAS</h1>
+        <canvas id="myCanvas" width="200" heigh="100" style="border: 1px; solid black;" ></canvas>
+        <legend>Details</legend>
+        <label for="fname">First name:</label><br>
+        <input type="text"id="fname" name="fname" value="chandrika"><br>
+        <label for="lname">last name</label><br>
+        <input type="text"id="lname" name="lname"value=""><br>
+        <input type="submit" value="Submit"> <br>
+        <hr>
+
+        <h2>Readonly</h2>
+        <label for="fname">first name:</label><br>
+        <input type="text"id="fname" name="fname" value="chandrika"Readonly><br>
+        <label for="lname">last name:</label> <br>
+        <input type="text" id="lname"name="lname" value="doe"> <br>
+
+        <hr>
+        <h2>validation form</h2><br>
+        <label for="fname">First name:</label> <br>
+        <input type="text" id="fname" name="fname" size="50"> <br>
+        <label for="pin">PIN</label> <br>
+        <input type="text" id="pin" name="pin" size="5">
+
+        <hr>
+        <label for="fname">First name:</label> <br>
+        <input type="text" id="fname" name="fname" size="50"> <br>
+        <label for="pin">PIN</label> <br>
+        <input type="text" id="pin" name="pin" maxlength="5" minlength="5"> <br>
+
+        <label for="datemax">enter the date before 1980-01-01:</label><br>
+        <input type="date" id="datemax" name="datemax" min="1979-12-31"><br><br>
+
+        <label for="datemin">enter the date before 2000-01-02:</label><br>
+        <input type="date" id="datemin" name="datemin" min="2000-01-02"><br><br>
+
+        <label for="quality">quality(betwwen 1 and 5)</label><br>
+        <input type="number" id="quality" name="quality" min="1" max="5"><br><br>
+
+        <hr>
+        <h2>Phone number</h2>
+        <label for="Phone">Phone number</label>
+        <input type="text" id="phone" name="phone" pattern="[0-9  ]{10}" title ="enter 10 number only" required maxlength="10">
+
+    </body>
+</html>
